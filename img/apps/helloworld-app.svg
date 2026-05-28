@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="appGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0066ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo redondeado -->
+  <rect x="10" y="10" width="80" height="80" rx="20" fill="url(#appGradient)" opacity="0.2"/>
+  <rect x="10" y="10" width="80" height="80" rx="20" fill="none" stroke="url(#appGradient)" stroke-width="2"/>
+  
+  <!-- Onda de saludo -->
+  <g fill="none" stroke="#00ff88" stroke-width="2" stroke-linecap="round">
+    <path d="M 40 35 Q 45 25 50 35" />
+    <path d="M 55 40 Q 60 25 65 40" />
+  </g>
+  
+  <!-- Texto "Hello" -->
+  <text x="50" y="65" font-size="20" font-weight="bold" fill="#00ff88" text-anchor="middle" font-family="monospace">HELLO</text>
+  
+  <!-- Punto decorativo -->
+  <circle cx="75" cy="25" r="4" fill="#0066ff" opacity="0.8"/>
+</svg>

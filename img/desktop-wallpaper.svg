@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="desktopBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1c3f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a3a52;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d2a3d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo principal -->
+  <rect width="1920" height="1080" fill="url(#desktopBg)"/>
+  
+  <!-- Líneas de cuadrícula muy sutiles -->
+  <g stroke="rgba(0, 255, 136, 0.03)" stroke-width="1">
+    <line x1="0" y1="0" x2="1920" y2="1080" />
+    <line x1="1920" y1="0" x2="0" y2="1080" />
+  </g>
+  
+  <!-- Círculos decorativos en las esquinas -->
+  <circle cx="150" cy="150" r="100" fill="none" stroke="rgba(0, 255, 136, 0.08)" stroke-width="2"/>
+  <circle cx="1770" cy="930" r="120" fill="none" stroke="rgba(0, 102, 255, 0.08)" stroke-width="2"/>
+  
+  <!-- Bloques de luz muy suave -->
+  <rect x="0" y="0" width="600" height="300" fill="rgba(0, 255, 136, 0.02)" />
+  <rect x="1320" y="780" width="600" height="300" fill="rgba(0, 102, 255, 0.02)" />
+</svg>
