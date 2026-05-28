@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnailOS - Escritorio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="desktop-body">
+    <!-- Contenido del escritorio -->
+    <div class="desktop-content">
+        <div class="desktop-grid" id="desktopGrid">
+            <!-- Los iconos de aplicaciones se generarán aquí -->
+        </div>
+    </div>
+    
+    <!-- Panel de aplicaciones (AppLauncher) -->
+    <div class="app-launcher-panel" id="appLauncherPanel">
+        <div class="app-launcher-header">
+            <h2>Aplicaciones</h2>
+            <button class="app-launcher-close" id="appLauncherClose">✕</button>
+        </div>
+        <div class="app-launcher-list" id="appLauncherList">
+            <!-- Las aplicaciones se listarán aquí -->
+        </div>
+    </div>
+    
+    <!-- Contenedor para ventanas de aplicaciones -->
+    <div class="windows-container" id="windowsContainer">
+        <!-- Las ventanas de aplicaciones se crearán aquí -->
+    </div>
+    
+    <!-- Barra de tareas (Taskbar) -->
+    <footer class="taskbar">
+        <div class="taskbar-left">
+            <button class="app-launcher-btn" id="appLauncherBtn">
+                <img src="img/logo.png" alt="SnailOS Logo" class="taskbar-logo">
+            </button>
+            <button class="shutdown-btn" id="shutdownBtn" title="Apagar">⏻</button>
+        </div>
+        <div class="taskbar-center">
+            <!-- Aquí se pueden agregar más elementos -->
+        </div>
+        <div class="taskbar-right">
+            <span id="reloj" class="clock">00:00:00</span>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/app-system/Application.js"></script>
+    <script src="js/app-system/ApplicationWindow.js"></script>
+    <script src="js/app-system/ApplicationManager.js"></script>
+    <script src="js/apps/TextEditorApp.js"></script>
+    <script src="js/apps/SpreadsheetApp.js"></script>
+    <script src="js/apps/NetworkManagerApp.js"></script>
+    <script src="js/apps/SettingsApp.js"></script>
+    <script src="js/apps/PrinterManagerApp.js"></script>
+    <script src="js/apps/SystemInfoApp.js"></script>
+    <script src="js/apps/AuthorsApp.js"></script>
+    <script src="js/desktop.js"></script>
+</body>
+</html>

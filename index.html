@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnailOS - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <form id="loginForm" onsubmit="verificarLogin(event)" class="login-form">
+            <div class="form-group">
+                <input 
+                    type="text" 
+                    id="usuario" 
+                    placeholder="Usuario" 
+                    required
+                >
+            </div>
+            
+            <div class="form-group">
+                <input 
+                    type="password" 
+                    id="contrasena" 
+                    placeholder="Contraseña" 
+                    required
+                >
+            </div>
+            
+            <button type="submit" class="login-btn">Iniciar</button>
+            
+            <div id="mensajeError" class="error-message"></div>
+        </form>
+    </div>
+    
+    <footer class="login-taskbar">
+        <div class="taskbar-left">
+            <img src="img/logo.png" alt="SnailOS Logo" class="taskbar-logo">
+        </div>
+        <div class="taskbar-right">
+            <span id="reloj" class="clock">00:00:00</span>
+        </div>
+    </footer>
+    
+    <script src="js/login.js"></script>
+    <script src="js/desktop.js"></script>
+</body>
+</html>
